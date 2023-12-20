@@ -1,5 +1,5 @@
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import { CopyrightOutlined, FacebookFilled, InstagramFilled, LinkedinFilled, YoutubeFilled } from '@ant-design/icons';
+import { CopyrightOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import brand from '../assets/images/brandlogo.png';
 
@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <Container fluid className='text-white text-center' style={{ background: 'rgba(0, 0, 0, 0.8)' }}>
       <Row className='text-center'>
-        <Image src={brand} width={50} height={100}></Image>
+        <Image src={brand} width={20} height={100}></Image>
       </Row>
       <Row className='d-flex align-items-center justify-content-center'>
         
