@@ -1,9 +1,12 @@
-import Header from './components/Header'
+import Header from './components/Header.jsx'
 // import Welcome from './components/Welcom'
-import Hero from './components/Hero'
-import Footer from './components/Footer'
+import Footer from './components/Footer.jsx'
 // import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Hero from './components/Hero.jsx'
+import Future from './components/Future.jsx'
+import Section2 from './components/Section2.jsx'
+// import AppBar from './components/AppBar.jsx'
 
 
 
@@ -15,8 +18,10 @@ function App() {
       {/* <Routes>        
         <Route path={'/'} element={<Welcome />} />        
       </Routes> */}
-
-      <Hero></Hero>
+      <Hero />
+      {/* <AppBar /> */}
+      <Section2 />
+      <Future />
       {/* <ContactUs />  */}
       <Footer />
     </div>

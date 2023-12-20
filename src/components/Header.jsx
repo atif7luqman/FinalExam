@@ -17,22 +17,27 @@ function Header() {
     border: '1px solid #18ADE4',
   };
 
-  return (
-    <Navbar collapseOnSelect expand="lg" className="header justify-content-center" style={{ backgroundColor: '#110915' }}>
-      <Container>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" >
-          
-          <Navbar.Brand href="#home">
-            <img
-              src={brand}// Replace with the actual URL of your logo image
-              className="d-inline-block align-center"
-              alt="Logo"
-            />
-          </Navbar.Brand>
+  const collapseButtonStyle = {
+    backgroundColor:'rgba(200, 200, 200, 0.8)', // Set the color of the collapse button to white
+    border: 'none',
+  };
 
-          <Nav className="mt-3 ms-auto me-5 ">
-            <NavLink to={'/privacy'} rel='noopener' style={navLinkStyle} activeStyle={{ backgroundColor: 'green' }}>
+  return (
+    <Navbar collapseOnSelect expand="lg" className="header" style={{ backgroundColor: '#110915' }}>
+      <Container>
+        <Navbar.Brand href="#home" className="me-lg-5">
+          <img
+            src={brand}
+            className="d-inline-block align-center"
+            alt="Logo"
+          />
+        </Navbar.Brand>
+        
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" style={collapseButtonStyle} />
+
+        <Navbar.Collapse id="responsive-navbar-nav" >
+          <Nav className="mt-3 ms-lg-auto me-lg-5">
+            <NavLink to={'/privacy'} rel='noopener' style={navLinkStyle}>
               <p className='fs-5 px-1'>Web3Maker</p>
             </NavLink>
             <NavLink to={'/departments'}  rel='noopener' style={navLinkStyle}>
@@ -44,11 +49,12 @@ function Header() {
             <NavLink to={'/doctors'}  rel='noopener' style={navLinkStyle}>
               <p className='fs-5 px-2'>Tool</p>
             </NavLink>
-            <NavLink to={'/doctors'} activeClassName='bg-primary' rel='noopener' style={navLinkStyle}>
+            <NavLink to={'/doctors'} rel='noopener' style={navLinkStyle}>
               <p className='fs-5 px-2'>Contact us</p>
             </NavLink>
           </Nav>
-          <Button style={buttonStyle}>Start for free</Button>
+                    
+          <Button style={buttonStyle} className="ms-lg-4">Start for free</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
