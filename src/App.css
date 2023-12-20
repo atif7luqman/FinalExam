@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'SFPRO';
+    src: url(../public/SFPRODISPLAYBLACKITALIC.OTF),
+         url(../public/SFPRODISPLAYBOLD.OTF),
+         url(../public/SFPRODISPLAYHEAVYITALIC.OTF),
+         url(../public/SFPRODISPLAYLIGHTITALIC.OTF),
+         url(../public/SFPRODISPLAYMEDIUM.OTF),
+         url(../public/SFPRODISPLAYREGULAR.OTF),
+         url(../public/SFPRODISPLAYTHINITALIC.OTF),
+         url(../public/SFPRODISPLAYULTRALIGHTITALIC.OTF);
+         
+
+  }
+
+.SFPRO {
+    font-family: SFPRODISPALYBOLD;
+}
+
