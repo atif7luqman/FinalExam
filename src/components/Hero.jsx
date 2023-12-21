@@ -1,6 +1,6 @@
 import { Container, Button, Image } from "react-bootstrap"
 import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
-import brand from '../assets/images/screen.png';
+import brand from '../assets/images/Screen.png';
 import background from '../assets/images/herobackground.png';
 
 function Hero() {
